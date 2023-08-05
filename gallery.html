@@ -109,8 +109,8 @@
         <div class=" container-lg text-center pb-5  pt-5">
             <ul class="tabs row row-cols-2 row-cols-lg-6 justify-content-center align-items-center">
                 <li class="col btn-project my-2 project-active" data-type="all">All</li>
-                <li class="col btn-project my-2" data-type="apartment" >Products</li>
-                <li class="col btn-project my-2" data-type="villa">Certificates</li>
+                <li class="col btn-project my-2" data-type="PRODUCT" >Products</li>
+                <li class="col btn-project my-2" data-type="CERTI">Certificates</li>
             </ul>
         </div>
         <div class="container-lg pb-5">
@@ -280,7 +280,7 @@ has enabled us in carving a niche for ourselves.
             else if(type=="CERTI" || type=="PRODUCT")
             gallery=gallerydb.filter((ele)=> ele.type==type);
             
-            console.log(gallerydb)
+            console.log(type,'gere')
             
             for(var i=0;i<gallery.length;i++)
             {

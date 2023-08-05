@@ -32,7 +32,7 @@ var gallerydb = [
     {id:1,title:"Certificate 1", name:"Chryso Istanbul Trip", description: "very important certificate", gallery: ["certificate1.png","certificate2.png","certificate3.png","certificate4.png","certificate5.png","certificate6.png"],type:"CERTI"},
     {id:2,title:"Certificate 2", name:"Normet", description: "very important certificate", gallery: ["certificate2.png","certificate1.png","certificate3.png","certificate4.png","certificate5.png","certificate6.png"],type:"CERTI"},
     {id:3,title:"Certificate 3", name:"Certificate", description: "very important certificate", gallery: ["certificate3.png","certificate2.png","certificate1.png","certificate4.png","certificate5.png","certificate6.png"],type:"CERTI"},
-    {id:4,title:"Certificate 4", name:"Certificate", description: "very important certificate", gallery: ["certificate4.png","certificate1.png","certificate2.png","certificate3.png","certificate5.png","certificate6.png"],type:"CERTI"},
-    {id:5,title:"Certificate 5", name:"Certificate", description: "very important certificate", gallery: ["certificate5.png", "certificate1.png","certificate2.png","certificate3.png","certificate4.png","certificate6.png"],type:"CERTI"},
-    {id:6,title:"Certificate 6", name:"Certificate", description: "very important certificate", gallery: ["certificate6.png","certificate1.png","certificate2.png","certificate3.png","certificate4.png","certificate5.png"],type:"CERTI"}
+    {id:4,title:"Certificate 4", name:"Certificate", description: "very important certificate", gallery: ["certificate4.png","certificate1.png","certificate2.png","certificate3.png","certificate5.png","certificate6.png"],type:"PRODUCT"},
+    {id:5,title:"Certificate 5", name:"Certificate", description: "very important certificate", gallery: ["certificate5.png", "certificate1.png","certificate2.png","certificate3.png","certificate4.png","certificate6.png"],type:"PRODUCT"},
+    {id:6,title:"Certificate 6", name:"Certificate", description: "very important certificate", gallery: ["certificate6.png","certificate1.png","certificate2.png","certificate3.png","certificate4.png","certificate5.png"],type:"PRODUCT"}
 ];
