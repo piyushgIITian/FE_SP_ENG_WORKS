@@ -109,8 +109,8 @@
         <div class=" container-lg text-center pb-5  pt-5">
             <ul class="tabs row row-cols-2 row-cols-lg-6 justify-content-center align-items-center">
                 <li class="col btn-project my-2 project-active" data-type="all">All</li>
-                <li class="col btn-project my-2" data-type="apartment" >Apartments</li>
-                <li class="col btn-project my-2" data-type="villa">Villas</li>
+                <li class="col btn-project my-2" data-type="apartment" >Products</li>
+                <li class="col btn-project my-2" data-type="villa">Certificates</li>
             </ul>
         </div>
         <div class="container-lg pb-5">
@@ -260,11 +260,11 @@ has enabled us in carving a niche for ourselves.
                    
                     e.currentTarget.classList.add("project-active");
                     var type=ele.getAttribute('data-type');
-                    var project=[];
+                    var gallerydb=[];
                     if(type=="all"){getAllGallery(type,e)}
-                    else if(type=="apartment")
+                    else if(type=="CERTI")
                         getAllGallery(type,e);
-                    else if(type=="villa")
+                    else if(type=="PRODUCT")
                         getAllGallery(type,e)
                     
                     
@@ -275,22 +275,22 @@ has enabled us in carving a niche for ourselves.
         let tabsArray = document.querySelectorAll(".tabs li");
         var inner=document.querySelector('#innerGallery');
             inner.innerHTML= "";
-            var project=[];
-            if(type=="all"){project=projects; }
-            else if(type=="apartment" || type=="villa")
-                    project=projects.filter((ele)=> ele.type==type);
+            var gallery=[];
+            if(type=="all"){gallery=gallerydb; }
+            else if(type=="CERTI" || type=="PRODUCT")
+            gallery=gallerydb.filter((ele)=> ele.type==type);
             
+            console.log(gallerydb)
             
-            
-            for(var i=0;i<project.length;i++)
+            for(var i=0;i<gallery.length;i++)
             {
                 inner.innerHTML+=
                 `<div class="col-md-6 col-lg-4 p-0" >
-                            <a href="gallery-details.html?pid=${project[i].id}" class=" text-decoration-none">
-                                <div class="gallery-img position-relative p-0" style="background-image:url(image/${project[i].gallery[0]});">
+                            <a href="gallery-details.html?pid=${gallery[i].id}" class=" text-decoration-none">
+                                <div class="gallery-img position-relative p-0" style="background-image:url(image/${gallery[i].gallery[0]});">
                                     <div class="hover-me">
                                         <img src="image/logo.png" alt="">
-                                        <h1 class="text-white fw-bold">${project[i].name}</h1>
+                                        <h1 class="text-white fw-bold">${gallery[i].name}</h1>
                                     </div>
                                 </div>
                             </a>
