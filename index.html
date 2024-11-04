@@ -1,6 +1,6 @@
-﻿
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,10 +15,10 @@
     <!-- Swiper CSS-->
     <link rel="stylesheet" href="css/swiper.css">
     <!-- Pages CSS Common-->
-    <link href="css/common.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet" />
     <!-- Index CSS -->
-    <link href="css/index.css"  rel="stylesheet"/>
-    
+    <link href="css/index.css" rel="stylesheet" />
+
     <title>Home Page</title>
     <!-- JS database-->
     <script src="js/database.js"></script>
@@ -26,26 +26,29 @@
     <link rel="icon" href="image/sp-icon.png" sizes="32x32">
     <script>
 
-        window.addEventListener('load',function(e){
-            getAllProjects(6,"all",e);
+        window.addEventListener('load', function (e) {
+            getAllProjects(6, "all", e);
         });
     </script>
-  
+
 </head>
+
 <body>
 
     <div class="continer-fluid bg-nav ">
         <div class="container-lg p-0 p-lg-1">
             <nav class="navbar navbar-expand-lg pe-0 py-0  ">
                 <a class="navbar-brand ms-3  mx-lg-0" href="index.html">
-                    <img src="image/brand.png" class="logo-brand"/>
+                    <img src="image/brand.png" class="logo-brand" />
                 </a>
-                <div class="navbar-toggler menu-btn order-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
+                <div class="navbar-toggler menu-btn order-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <div class="menu-btn__burger"></div>
                 </div>
                 <div class="collapse navbar-collapse order-3 order-lg-1 p-0 " id="navbarNav">
-                    <ul class="navbar-nav  ms-auto  d-flex justify-content-center align-items-center bg-md-nav py-1 py-lg-0">
+                    <ul
+                        class="navbar-nav  ms-auto  d-flex justify-content-center align-items-center bg-md-nav py-1 py-lg-0">
                         <li class="nav-item">
                             <a class="nav-link nav-link-Header link-header-active" href="index.html">Home</a>
                         </li>
@@ -56,7 +59,7 @@
                             <a class="nav-link nav-link-Header" href="projects.html">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link nav-link-Header"  href="gallery.html">Gallery</a>
+                            <a class="nav-link nav-link-Header" href="gallery.html">Gallery</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-link-Header" href="news.html">News</a>
@@ -66,30 +69,37 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link nav-link-Header" href="order.html">Place order</a>
-                        </li>            
+                        </li>
                     </ul>
                 </div>
             </nav>
         </div>
     </div>
     <div>
-        <div class="container-fluid p-0" >
+        <div class="container-fluid p-0">
             <div class="p-0">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="6000">
-                            <img src="image/header-cover-noopacity.png" class="d-block w-100" alt="...">
+                            <img src="image/crousel-1.jpeg" class="d-block w-100" alt="...">
                             <div class="carousel-caption ">
-                                <div class="p-lg-0 h-100">
-                                    <div class="row h-100 justify-content-start align-items-center">
-                                        <div class="col-5 col-sm-3 col-lg-6 text-start">
-                                            <h1 class="text-white head-100 fw-bold">DISCOVER MODERN SOLUTIONS</h1>
-                                            <a href="projects.html" class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">Learn more</a>
+                                <div class="p-lg-0 h-200">
+                                    <div style="align-items: flex-end; justify-content: flex-end;"
+                                        class="row h-200  mb-0">
+                                        <div class="col-6"></div>
+                                        <div class="col-5 col-sm-3 col-lg-6 text-start ">
+                                            <h1 class="text-white head-100 fw-bold">COMPLETE CONSTRUCTION SOLUTION</h1>
+                                            <a href="projects.html"
+                                                class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">Learn
+                                                more</a>
                                         </div>
                                     </div>
                                 </div>
@@ -102,11 +112,13 @@
                                     <div class="row h-100 justify-content-start align-items-center">
                                         <div class="col-5 col-sm-3 col-lg-6 text-start">
                                             <h1 class="text-white head-100 fw-bold">With Professional Workers</h1>
-                                            <a href="projects.html" class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">Learn more</a>
+                                            <a href="projects.html"
+                                                class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">Learn
+                                                more</a>
                                         </div>
                                     </div>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div class="carousel-item " data-bs-interval="6000">
                             <img src="image/crousel-image-3.webp" class="d-block w-100" alt="...">
@@ -115,30 +127,33 @@
                                     <div class="row h-100 justify-content-end align-items-end">
                                         <div class="col-5 col-sm-3 col-lg-6 text-end">
                                             <h1 class="text-white head-100 fw-bold">And Industry Experts</h1>
-                                            <a href="projects.html" class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">Learn more</a>
+                                            <a href="projects.html"
+                                                class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">Learn
+                                                more</a>
                                         </div>
                                     </div>
+                                </div>
                             </div>
                         </div>
-                        </div>
                     </div>
-                    
+
                 </div>
-        </div>
+            </div>
             <div class=" bg-light-60 pt-5">
                 <div class="container-lg ">
                     <div class="row">
                         <div class="col-lg-5 col-lg-6">
-                            <img src="image/villa.png" class="w-100"/>
+                            <img src="image/villa.png" class="w-100" />
                         </div>
                         <div class="col-lg-6 col-lg-6 ms-auto mt-5 mt-sm-0 ">
-                            <h6 class="text-dark mb-4 fs-15">Slogan Here</h6>
                             <h2 class="text-yellow mb-4 fs-30">About SP Engineering Works</h2>
-                            <p class="text-dark-30 mb-4 fs-15 about-p">S. P. Engineering Works are one of the leading service providers of a wide
-range of waterproofing applications, civil construction services and epoxy coatings services. </p>
+                            <p class="text-dark-30 mb-4 fs-15 about-p">S. P. Engineering Works are one of the leading
+                                service providers of a wide
+                                range of waterproofing applications, civil construction services and epoxy coatings
+                                services. </p>
                             <div class="d-flex  mb-2">
                                 <div class="me-3">
-                                    <i class="fa-solid fa-square-check text-yellow"></i>                                
+                                    <i class="fa-solid fa-square-check text-yellow"></i>
                                 </div>
                                 <div class="text-dark-30">
                                     Established in the year 2000
@@ -146,7 +161,7 @@ range of waterproofing applications, civil construction services and epoxy coati
                             </div>
                             <div class="d-flex mb-2">
                                 <div class="me-3">
-                                    <i class="fa-solid fa-square-check text-yellow"></i>                                
+                                    <i class="fa-solid fa-square-check text-yellow"></i>
                                 </div>
                                 <div class="text-dark-30">
                                     We have completed nearly 150 projects across India.
@@ -154,43 +169,49 @@ range of waterproofing applications, civil construction services and epoxy coati
                             </div>
                             <div class="d-flex">
                                 <div class="me-3">
-                                    <i class="fa-solid fa-square-check text-yellow"></i>                                
+                                    <i class="fa-solid fa-square-check text-yellow"></i>
                                 </div>
                                 <div class="text-dark-30">
-                                    We're in: Delhi NCR, Mumbai, Lucknow(so far)
+                                    PAN India presence with 50+ employees.
                                 </div>
                             </div>
-                            <div class="row w-100 row-cols-1 row-cols-sm-3 py-5 justify-content-center align-items-center">
+                            <div
+                                class="row w-100 row-cols-1 row-cols-sm-3 py-5 justify-content-center align-items-center">
                                 <div class="col mb-3">
-                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0  ">
+                                    <div
+                                        class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0  ">
                                         <div class="square mb-3"><i class="fa-solid fa-building-shield"></i></div>
                                         <h5 class="fw-bold">150</h5>
                                         <p>Projects</p>
                                     </div>
                                 </div>
                                 <div class="col mb-3">
-                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                    <div
+                                        class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
                                         <div class="square mb-3"><i class="fa-solid fa-city"></i></div>
-                                        <h5 class="fw-bold">1500</h5>
-                                        <p>Apartments</p>
+                                        <h5 class="fw-bold">20+</h5>
+                                        <p>Services</p>
                                     </div>
                                 </div>
                                 <div class="col mb-3">
-                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                    <div
+                                        class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
                                         <div class="square mb-3"><i class="fa-solid fa-house"></i></div>
-                                        <h5 class="fw-bold">100+</h5>
+                                        <h5 class="fw-bold">50+</h5>
                                         <p>Employees</p>
                                     </div>
                                 </div>
                                 <div class="col mb-3">
-                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                    <div
+                                        class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
                                         <div class="square mb-3"><i class="fa-solid fa-hotel"></i></div>
                                         <h5 class="fw-bold">20yr+</h5>
                                         <p>Experience</p>
                                     </div>
                                 </div>
                                 <div class="col mb-3">
-                                    <div class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
+                                    <div
+                                        class="polygon-corner d-flex flex-column justify-content-center align-items-center mx-auto mx-sm-0 ">
                                         <div class="square mb-3"><i class="fa-solid fa-pen-ruler"></i></div>
                                         <h5 class="fw-bold">30+</h5>
                                         <p>Clients</p>
@@ -201,31 +222,35 @@ range of waterproofing applications, civil construction services and epoxy coati
                     </div>
                 </div>
             </div>
-    
+
             <div class="bg-yellow">
                 <div class="container-lg d-flex flex-column align-items-center py-5">
                     <h1 class="text-dark mb-4 fw-bold fs-30">How It Works</h1>
-                    <img src="image/world with lines.png" class="world-lines"/>
+                    <img src="image/world with lines.png" class="world-lines" />
                     <div class="row text-center mt-3">
                         <div class="col-lg-4 mt-4">
                             <div class="px-4 py-3">
                                 <img src="image/explore.png" class="img-work-div" />
                                 <h3 class="mt-4 headline3">Explore</h3>
-                                <p class="text-dark ">Many different options on products, features and prices, with its similarity in quality and beauty.</p>
+                                <p class="text-dark ">Explore our wide range of services and consult with top engineers
+                                    and professionals to find exactly what you need. Our team guides you in choosing the
+                                    best solutions tailored to your goals, ensuring optimal results every time.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 mt-4">
                             <div class="px-4 py-3">
                                 <img src="image/call.png" class="img-work-div" />
                                 <h3 class="mt-4 headline3">Contact</h3>
-                                <p class="text-dark ">Ask us what's on your mind and discuss your inquiries to reach an agreement that satisfies everyone.</p>
+                                <p class="text-dark ">Ask us what's on your mind and discuss your inquiries to reach an
+                                    agreement that satisfies everyone.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 mt-4">
                             <div class="px-4 py-3">
                                 <img src="image/smile.png" class="img-work-div" />
                                 <h3 class="mt-4 headline3">Own</h3>
-                                <p class="text-dark ">Congratulations! With a few easy steps, you become a member of our family, and your house is our responsibility.</p>
+                                <p class="text-dark ">Congratulations! With a few easy steps, you become a member of our
+                                    family, and your project is our responsibility.</p>
                             </div>
                         </div>
                     </div>
@@ -235,23 +260,26 @@ range of waterproofing applications, civil construction services and epoxy coati
                 <div class=" container-lg pb-5">
                     <div class=" row text-center pt-2">
                         <h1 class="text-dark py-4 fw-bold fs-30">Why Choose Us</h1>
-                            <p class=" text-dark fw-bold mb-4">Reasons why people love to perfect their dream projets with us</p>
+                        <p class=" text-dark fw-bold mb-4">Reasons why people love to perfect their dream projets with
+                            us</p>
                         <div class=" col-lg-4 mt-2">
                             <div class="m-2 mx-auto bg-white  div-wth-shadow p-4">
                                 <img src="image/location.png" class="mt-3 img-work-div">
-                                <p class="mt-3">Presence in strategic locations surrounded by all the important services</p>
+                                <p class="mt-3">Presence in strategic locations surrounded by all the important services
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-4 mt-2">
                             <div class="m-2 mx-auto bg-white div-wth-shadow p-4">
                                 <img src="image/protection.png" class="mt-3 img-work-div">
-                                <p class="mt-3">Provide guarantees up to 15 years on all basics.</p>
+                                <p class="mt-3">Provide guarantees up to 10 years on all basics.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 mt-2">
                             <div class="m-2 mx-auto bg-white  div-wth-shadow p-4">
                                 <img src="image/chat.png" class="mt-3 img-work-div">
-                                <p class="mt-3">Ensuring constant communication between our officials and customers to ensure the best possible service.</p>
+                                <p class="mt-3">Ensuring constant communication between our officials and customers to
+                                    ensure the best possible service.</p>
                             </div>
                         </div>
                     </div>
@@ -264,21 +292,20 @@ range of waterproofing applications, civil construction services and epoxy coati
                     <div class=" container-lg pb-5 justify-content-center bg-light-60 text-center">
                         <ul class="tabs row row-cols-2 row-cols-lg-6 justify-content-center align-items-center">
                             <li class="col btn-project my-2   me-3 project-active" data-type="all">All</li>
-                            <li class="col btn-project my-2   me-3" data-type="project" >Projects</li>
-                            <li class="col btn-project my-2   me-3" data-type="villa">Clientale</li>
-                            <li class="col btn-project my-2   me-3" data-type="sold">Products</li>
-                            <li class="col btn-project my-2   me-3" data-type="forsale">Services</li>
+                            <li class="col btn-project my-2   me-3" data-type="project">Projects</li>
+                            <li class="col btn-project my-2   me-3" data-type="clientale">Clientale</li>
+                            <li class="col btn-project my-2   me-3" data-type="services">Services</li>
                         </ul>
                     </div>
                     <div class="bg-light-60"></div>
                     <div class="container-lg">
                         <div class="one">
 
-                                <div class=" row align-items-stretch" id="innerProject">
-                                </div>
-                                <div class="d-flex justify-content-center align-items-center py-5">
-                                    <a href="projects.html" class="btn btn-yellow py-2 px-5 text-white">See More</a>
-                                </div>
+                            <div class=" row align-items-stretch" id="innerProject">
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center py-5">
+                                <a href="projects.html" class="btn btn-yellow py-2 px-5 text-white">See More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,106 +313,118 @@ range of waterproofing applications, civil construction services and epoxy coati
         </div>
     </div>
 
-<div class="pb-5 bg-light-60">
-    <div class=" container-lg pb-5 ">
-        <h1 class="text-dark mb-5 text-center fw-bold fs-30">Testimonial</h1>
-        <div class="pb-5" style="height: 300px;">
-            <div class="swiper mySwiper">
+    <div class="pb-5 bg-light-60">
+        <div class=" container-lg pb-5 ">
+            <h1 class="text-dark mb-5 text-center fw-bold fs-30">Testimonial</h1>
+            <div class="pb-5" style="height: 300px;">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testomial  py-3 px-4">
+                                <div class="d-flex ">
+                                    <div>
+                                        <img src="image/person1.png">
+                                    </div>
+                                    <div class="ms-3 mt-3 text-start">
+                                        <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to </p>
+                                        <div class="d-flex flex-row">
+                                            <h6 class="testomial-h6">Jennifer Lopez</h6>
+                                            <span class="testomial-span">(CEO - SAMA).</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testomial py-3 px-4">
+                                <div class="d-flex ">
+                                    <div>
+                                        <img src="image/person1.png">
+                                    </div>
+                                    <div class="ms-3 mt-3 text-start">
+                                        <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to </p>
+                                        <div class="d-flex flex-row">
+                                            <h6 class="testomial-h6">Jennifer Lopez</h6>
+                                            <span class="testomial-span">(CEO - SAMA).</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testomial py-3 px-4">
+                                <div class="d-flex ">
+                                    <div>
+                                        <img src="image/person1.png">
+                                    </div>
+                                    <div class="ms-3 mt-3 text-start">
+                                        <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to </p>
+                                        <div class="d-flex flex-row">
+                                            <h6 class="testomial-h6">Jennifer Lopez</h6>
+                                            <span class="testomial-span">(CEO - SAMA).</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testomial py-3 px-4">
+                                <div class="d-flex ">
+                                    <div>
+                                        <img src="image/person1.png">
+                                    </div>
+                                    <div class="ms-3 mt-3 text-start">
+                                        <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                            text ever since the 1500s, when an unknown printer took a galley of type and
+                                            scrambled it to </p>
+                                        <div class="d-flex flex-row">
+                                            <h6 class="testomial-h6">Jennifer Lopez</h6>
+                                            <span class="testomial-span">(CEO - SAMA).</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-lg pb-5">
+            <h1 class="text-dark mb-5 text-center fw-bold fs-30">Our Partners</h1>
+
+            <div class="swiper swpartners">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testomial  py-3 px-4">
-                            <div class="d-flex ">
-                                <div>
-                                    <img src="image/person1.png">
-                                </div>
-                                <div class="ms-3 mt-3 text-start">
-                                    <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  </p>
-                                    <div class="d-flex flex-row">
-                                        <h6 class="testomial-h6">Jennifer Lopez</h6>
-                                        <span class="testomial-span">(CEO - SAMA).</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="swiper-slide swp-slide">
+                        <img src="image/partner1.png" class="sw-img" />
                     </div>
-                    <div class="swiper-slide">
-                        <div class="testomial py-3 px-4">
-                            <div class="d-flex ">
-                                <div>
-                                    <img src="image/person1.png">
-                                </div>
-                                <div class="ms-3 mt-3 text-start">
-                                    <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  </p>
-                                    <div class="d-flex flex-row">
-                                        <h6 class="testomial-h6">Jennifer Lopez</h6>
-                                        <span class="testomial-span">(CEO - SAMA).</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="swiper-slide swp-slide">
+                        <img src="image/partner2.png" class="sw-img" />
                     </div>
-                    <div class="swiper-slide">
-                        <div class="testomial py-3 px-4">
-                            <div class="d-flex ">
-                                <div>
-                                    <img src="image/person1.png">
-                                </div>
-                                <div class="ms-3 mt-3 text-start">
-                                    <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  </p>
-                                    <div class="d-flex flex-row">
-                                        <h6 class="testomial-h6">Jennifer Lopez</h6>
-                                        <span class="testomial-span">(CEO - SAMA).</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="swiper-slide swp-slide">
+                        <img src="image/partner3.png" class="sw-img" />
                     </div>
-                    <div class="swiper-slide">
-                        <div class="testomial py-3 px-4">
-                            <div class="d-flex ">
-                                <div>
-                                    <img src="image/person1.png">
-                                </div>
-                                <div class="ms-3 mt-3 text-start">
-                                    <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to  </p>
-                                    <div class="d-flex flex-row">
-                                        <h6 class="testomial-h6">Jennifer Lopez</h6>
-                                        <span class="testomial-span">(CEO - SAMA).</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="swiper-slide swp-slide">
+                        <img src="image/partner4.png" class="sw-img" />
+                    </div>
+                    <div class="swiper-slide swp-slide">
+                        <img src="image/partner5.png" class="sw-img" />
                     </div>
                 </div>
+
             </div>
         </div>
+
     </div>
-    <div class="container-lg pb-5">
-    <h1 class="text-dark mb-5 text-center fw-bold fs-30">Our Partners</h1>
-
-        <div class="swiper swpartners">
-            <div class="swiper-wrapper">
-            <div class="swiper-slide swp-slide">
-                <img src="image/partner1.png" class="sw-img"/>
-            </div>
-            <div class="swiper-slide swp-slide">
-                <img src="image/partner2.png" class="sw-img"/>
-            </div>
-            <div class="swiper-slide swp-slide">
-                <img src="image/partner3.png" class="sw-img"/>
-            </div>
-            <div class="swiper-slide swp-slide">
-                <img src="image/partner4.png" class="sw-img"/>
-            </div>
-            <div class="swiper-slide swp-slide">
-                <img src="image/partner5.png" class="sw-img"/>
-            </div>
-            </div>
-
-        </div>
-    </div>
-
-</div>
 
 
 
@@ -393,20 +432,27 @@ range of waterproofing applications, civil construction services and epoxy coati
         <div class="container-lg mt-0 mt-lg-0 pt-0 pt-lg-0">
             <div class="row pb-4">
                 <div class="col-lg-4 mt-5">
-                    <a href="index.html"><img src="image/brand.png" class="logo-brand"/></a>
+                    <a href="index.html"><img src="image/brand.png" class="logo-brand" /></a>
                     <div class="mt-3">
                         <p class="footer-company-desc">
-                            Established in the year 2000, we, S. P. Engineering Works are one of the leading service providers of a wide
-range of waterproofing applications, civil construction services and epoxy coatings services.
- 
-Backed by the support of technically qualified, experienced and result oriented service professionals, we have
-been able to undertake industrial, commercial, religious, housing and various other turnkey projects to offer highly
-innovative services to clients. We maintain stringent quality mechanisms and ensure to execute projects that stand
-at par with international quality standards.
- 
-Under the guidance of our mentor Mr. Naveen Sharma, who has over 19 years of experience in the industry, we
-have been able to carve a niche for ourselves in the market. His rich business acumen and sharp business insight
-has enabled us in carving a niche for ourselves.
+                            Established in the year 2000, we, S. P. Engineering Works are one of the leading service
+                            providers of a wide
+                            range of waterproofing applications, civil construction services and epoxy coatings
+                            services.
+                             
+                            Backed by the support of technically qualified, experienced and result oriented service
+                            professionals, we have
+                            been able to undertake industrial, commercial, religious, housing and various other turnkey
+                            projects to offer highly
+                            innovative services to clients. We maintain stringent quality mechanisms and ensure to
+                            execute projects that stand
+                            at par with international quality standards.
+                             
+                            Under the guidance of our mentor Mr. Naveen Sharma, who has over 19 years of experience in
+                            the industry, we
+                            have been able to carve a niche for ourselves in the market. His rich business acumen and
+                            sharp business insight
+                            has enabled us in carving a niche for ourselves.
                         </p>
                     </div>
                 </div>
@@ -416,7 +462,8 @@ has enabled us in carving a niche for ourselves.
                         <div class="col">
                             <ul class="nav flex-column ">
                                 <li class="nav-item">
-                                    <a href="index.html" class="nav-link ms-0 mb-1 px-0  link-footer link-active-footer">Home</a>
+                                    <a href="index.html"
+                                        class="nav-link ms-0 mb-1 px-0  link-footer link-active-footer">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="about.html" class="nav-link ms-0  mb-1 px-0 link-footer">About us</a>
@@ -447,7 +494,8 @@ has enabled us in carving a niche for ourselves.
                                     <a href="faq.html" class="nav-link ms-0 mb-1  px-0 link-footer">FAQ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="privacy.html" class="nav-link ms-0 mb-1  px-0 link-footer">Privacy Policy</a>
+                                    <a href="privacy.html" class="nav-link ms-0 mb-1  px-0 link-footer">Privacy
+                                        Policy</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="terms.html" class="nav-link ms-0 mb-1  px-0 link-footer">Term use</a>
@@ -459,17 +507,17 @@ has enabled us in carving a niche for ourselves.
                 <div class="col-lg-4 mt-5">
                     <h5 class="link-footer-parent"><span class="">Newsletter Subscribe</span> </h5>
 
-                            <form id="footerform" class="">
-                                <div class="">
-                                    <label for="emailtxt" class="form-label"></label>
-                                    <input type="text" class="form-control bg-transparent text-white py-2 px-2" id="emailtxt" >
-                                    <div class="invalid-email"></div>
-                                </div>
-                                <button class="btn w-100 mt-3 btn-yellow text-white" type="submit">Subscription</button>
-                            </form>
+                    <form id="footerform" class="">
+                        <div class="">
+                            <label for="emailtxt" class="form-label"></label>
+                            <input type="text" class="form-control bg-transparent text-white py-2 px-2" id="emailtxt">
+                            <div class="invalid-email"></div>
+                        </div>
+                        <button class="btn w-100 mt-3 btn-yellow text-white" type="submit">Subscription</button>
+                    </form>
                     <div class="mt-4">
                         <div class="d-inline-block ms-1 me-3">
-                            <a href="http://facebook.com/people/Amaas-Realestate/10007915978616" >
+                            <a href="http://facebook.com/people/Amaas-Realestate/10007915978616">
                                 <i class="fa-brands fa-facebook-f footer-links"></i>
                             </a>
                         </div>
@@ -483,7 +531,7 @@ has enabled us in carving a niche for ourselves.
                                 <i class="fa-brands fa-whatsapp footer-links"></i>
                             </a>
                         </div>
-                        
+
                         <div class="d-inline-block  me-3">
                             <a href="https://www.youtube.com/channel/UCKftYeW9JhMnSlUM8ORun6w">
                                 <i class="fa-brands fa-youtube footer-links"></i>
@@ -516,81 +564,82 @@ has enabled us in carving a niche for ourselves.
     <!-- Pages JS Common-->
     <script src="js/common.js"></script>
 
-        <script>
+    <script>
 
-            let tabsArray = document.querySelectorAll(".tabs li");
-            let divs = document.querySelector(".one");
-            tabsArray.forEach((ele) => {
-                ele.addEventListener("click", function (e) {
-                    tabsArray.forEach((ele) => {
-                        if(ele.classList.contains("project-active"))
-                         ele.classList.remove("project-active");
-                    });
-                     e.currentTarget.classList.add("project-active");
-                    var type=ele.getAttribute('data-type');
-                    var project=[];
-                    if(type=="all"){getAllProjects(6,"all",e)}
-                    else if(type=="apartment")
-                        getAllProjects(6,"apartment",e);
-                    else if(type=="villa")
-                        getAllProjects(6,"villa",e)
-                    else if(type=="sold")
-                        getAllProjects(6,"sold",e)
-                    else if(type=="forsale")
-                        getAllProjects(6,"forsale",e);
-                    
+        let tabsArray = document.querySelectorAll(".tabs li");
+        let divs = document.querySelector(".one");
+        tabsArray.forEach((ele) => {
+            ele.addEventListener("click", function (e) {
+                tabsArray.forEach((ele) => {
+                    if (ele.classList.contains("project-active"))
+                        ele.classList.remove("project-active");
                 });
-            });
-    
+                e.currentTarget.classList.add("project-active");
+                var type = ele.getAttribute('data-type');
+                var project = [];
+                if (type == "all") { getAllProjects(6, "all", e) }
+                else if (type == "project")
+                    getAllProjects(6, "project", e);
+                else if (type == "clientale")
+                    getAllClientale(6, "clientale", e)
+                else if (type == "gallery")
+                    getAllGallery(6)
+                else if (type == "services")
+                    getAllServices(6, "services", e);
 
-            var swtestomnial = new Swiper(".mySwiper", {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                    autoplay: {
-                        delay: 5000,
-                        disableOnInteraction:false,
-                    },
-                    centeredSlides: true,
-                    loop:true,
-                    breakpoints: {
-                    "@0.00": {
-                        slidesPerView: 1,
-                        spaceBetween: 5,
-                    },
-                    "@2.00": {
-                        slidesPerView: 3,
-                        spaceBetween: 10,
-                    },
-                },
             });
-            var swipartner = new Swiper(".swpartners", {
+        });
+
+
+        var swtestomnial = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            centeredSlides: true,
+            loop: true,
+            breakpoints: {
+                "@0.00": {
                     slidesPerView: 1,
-                    spaceBetween: 10,
-                    autoplay: {
-                        delay: 5000,
-                        disableOnInteraction:false,
-                    },
-                    centeredSlides: true,
-                    loop:true,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    breakpoints: {
-                    "@0.00": {
-                        slidesPerView: 2,
-                        spaceBetween: 2,
-                    },
-                    "@1.00": {
-                        slidesPerView: 3,
-                        spaceBetween: 5,
-                    },
-                    "@2.00": {
-                        slidesPerView: 6,
-                        spaceBetween: 10,
-                    },
+                    spaceBetween: 5,
                 },
-            });
-        </script>
+                "@2.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 10,
+                },
+            },
+        });
+        var swipartner = new Swiper(".swpartners", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 2,
+                    spaceBetween: 2,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 5,
+                },
+                "@2.00": {
+                    slidesPerView: 6,
+                    spaceBetween: 10,
+                },
+            },
+        });
+    </script>
 </body>
+
 </html>
