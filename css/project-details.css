@@ -1,78 +1,153 @@
-         
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
+/* Project Details Page Styles - Enhanced for SP Engineering Works */
 
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+/* Swiper Styles */
+.swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
 
-      .swiper {
-        
-        margin-left: auto;
-        margin-right: auto;
-      }
+.swiper-slide:hover {
+  box-shadow: 0 8px 20px rgba(77, 112, 202, 0.2);
+}
 
-      .swiper-slide {
-        background-size: cover;
-        background-position: center;
-      }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
 
-      .mySwiper2 {
-        height: 80%;
-        width: 100%;
-      }
+.swiper-slide:hover img {
+  transform: scale(1.02);
+}
 
-      .mySwiper {
-        box-sizing: border-box;
-        padding: 10px 0;
-      }
+/* Main Swiper */
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-      .mySwiper .swiper-slide {
-        width: 25%;
-        height: 100%;
-        opacity: 0.4;
-      }
+/* Thumbnail Swiper */
+.mySwiper {
+  box-sizing: border-box;
+  padding: 10px 0;
+}
 
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
-      .mySwiper .swiper-slide-thumb-active {
-        opacity: 1;
-      }
+.mySwiper .swiper-slide:hover {
+  opacity: 0.7;
+}
 
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      .img-slide{
-        height: 600px !important;
-      }
-      .img-thumb{
-        width: 50px !important;
-        height: 50px !important;
-      }
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+  border: 2px solid #4D70CA;
+}
+
+/* Image Sizes */
+.img-slide {
+  height: 600px !important;
+  border-radius: 8px;
+}
+
+.img-thumb {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 4px;
+}
+
+/* Project Details Section */
+.project-details-section {
+  padding: 30px 0;
+}
+
+.project-details-section h2 {
+  color: #4D70CA;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.project-details-section h2::after {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: #4D70CA;
+  bottom: -10px;
+  left: 0;
+}
+
+/* Project Info Table */
+.project-info {
+  margin-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.project-info .fw-bold {
+  color: #4D70CA;
+}
+
+/* No Image Placeholder */
+.no-image-placeholder {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  color: #6C6D70;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .img-slide {
+    height: 400px !important;
+  }
+  
+  .mySwiper .swiper-slide {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 576px) {
+  .img-slide {
+    height: 300px !important;
+  }
+  
+  .mySwiper .swiper-slide {
+    width: 50%;
+  }
+}

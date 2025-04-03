@@ -281,6 +281,10 @@
             height: 150px;
             background-color: #F5F5F5;
             transition: all 0.5s ease;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            cursor: pointer;
         }
         .polygon-corner h5{
             color:#040404;
@@ -301,12 +305,37 @@
         }
         .polygon-corner:hover{
             background-color: #4D70CA;
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 15px 30px rgba(77, 112, 202, 0.3);
         }
         .polygon-corner:hover h5,.polygon-corner:hover p{
             color:#FFF;
         }
         .polygon-corner:hover .square i{
             color:#FFF !important;
+            transform: rotate(360deg);
+            transition: all 0.8s ease;
+        }
+        @keyframes pulse-border {
+            0% {
+                box-shadow: 0 0 0 0 rgba(77, 112, 202, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 10px rgba(77, 112, 202, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(77, 112, 202, 0);
+            }
+        }
+        .polygon-corner:hover::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 8px;
+            animation: pulse-border 1.5s infinite;
         }
         .swp-slide{
             /* Center slide text vertically */

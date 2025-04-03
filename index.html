@@ -1,4 +1,4 @@
-﻿<!doctype html>
+﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -18,12 +18,27 @@
     <link href="css/common.css" rel="stylesheet" />
     <!-- Index CSS -->
     <link href="css/index.css" rel="stylesheet" />
+    <!-- Animations CSS -->
+    <link href="css/animations.css" rel="stylesheet" />
+    <!-- Metrics CSS -->
+    <link href="css/metrics.css" rel="stylesheet" />
 
-    <title>Home Page</title>
+    <title>SP Engineering Works - Construction Chemicals & Waterproofing Solutions</title>
+    <meta name="description" content="SP Engineering Works - Leading provider of waterproofing applications, civil construction services, and epoxy coatings since 2000. Quality solutions for industrial, commercial, and residential projects.">
+    <meta name="keywords" content="SP Engineering Works, waterproofing, construction chemicals, epoxy coatings, civil construction, industrial flooring">
+    
     <!-- JS database-->
     <script src="js/database.js"></script>
+    
+    <!-- Chart.js for metrics -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <link rel="icon" href="image/sp-icon.png" sizes="32x32">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="image/logo.png" as="image">
+    <link rel="preload" href="image/brand.png" as="image">
+    <link rel="preload" href="image/crousel-1.jpeg" as="image">
     <script>
 
         window.addEventListener('load', function (e) {
@@ -39,7 +54,7 @@
         <div class="container-lg p-0 p-lg-1">
             <nav class="navbar navbar-expand-lg pe-0 py-0  ">
                 <a class="navbar-brand ms-3  mx-lg-0" href="index.html">
-                    <img src="image/brand.png" class="logo-brand" />
+                    <img src="image/logo.svg" class="logo-brand" />
                 </a>
                 <div class="navbar-toggler menu-btn order-2" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -61,15 +76,11 @@
                         <li class="nav-item">
                             <a class="nav-link nav-link-Header" href="gallery.html">Gallery</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-Header" href="news.html">News</a>
-                        </li>
+                       
                         <li class="nav-item">
                             <a class="nav-link nav-link-Header" href="contact.html">Contact</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link nav-link-Header" href="order.html">Place order</a>
-                        </li>
+                        
                     </ul>
                 </div>
             </nav>
@@ -89,16 +100,16 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="6000">
-                            <img src="image/crousel-1.jpeg" class="d-block w-100" alt="...">
+                            <img src="image/crousel-1.jpeg" class="d-block w-100" alt="SP Engineering Works Construction Solutions">
                             <div class="carousel-caption ">
                                 <div class="p-lg-0 h-200">
                                     <div style="align-items: flex-end; justify-content: flex-end;"
                                         class="row h-200  mb-0">
                                         <div class="col-6"></div>
                                         <div class="col-5 col-sm-3 col-lg-6 text-start ">
-                                            <h1 class="text-white head-100 fw-bold">COMPLETE CONSTRUCTION SOLUTION</h1>
+                                            <h1 class="text-white head-100 fw-bold animate-text">COMPLETE CONSTRUCTION SOLUTION</h1>
                                             <a href="projects.html"
-                                                class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">Learn
+                                                class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase animate-button">Learn
                                                 more</a>
                                         </div>
                                     </div>
@@ -106,14 +117,14 @@
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="6000">
-                            <img src="image/crousel-image-2.png" class="d-block w-100" alt="...">
+                            <img src="image/crousel-image-2.png" class="d-block w-100" alt="SP Engineering Professional Team">
                             <div class="carousel-caption ">
                                 <div class="p-lg-0 h-100">
                                     <div class="row h-100 justify-content-start align-items-center">
                                         <div class="col-5 col-sm-3 col-lg-6 text-start">
-                                            <h1 class="text-white head-100 fw-bold">With Professional Workers</h1>
+                                            <h1 class="text-white head-100 fw-bold animate-text">With Professional Workers</h1>
                                             <a href="projects.html"
-                                                class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">Learn
+                                                class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase animate-button">Learn
                                                 more</a>
                                         </div>
                                     </div>
@@ -121,14 +132,14 @@
                             </div>
                         </div>
                         <div class="carousel-item " data-bs-interval="6000">
-                            <img src="image/crousel-image-3.webp" class="d-block w-100" alt="...">
+                            <img src="image/crousel-image-3.webp" class="d-block w-100" alt="SP Engineering Industry Experts">
                             <div class="carousel-caption ">
                                 <div class="p-lg-0 h-100">
                                     <div class="row h-100 justify-content-end align-items-end">
                                         <div class="col-5 col-sm-3 col-lg-6 text-end">
-                                            <h1 class="text-white head-100 fw-bold">And Industry Experts</h1>
+                                            <h1 class="text-white head-100 fw-bold animate-text">And Industry Experts</h1>
                                             <a href="projects.html"
-                                                class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase">Learn
+                                                class="btn btn-yellow  px-4 px-lg-5 py-2 text-white fw-bold text-uppercase animate-button">Learn
                                                 more</a>
                                         </div>
                                     </div>
@@ -225,11 +236,11 @@
 
             <div class="bg-yellow">
                 <div class="container-lg d-flex flex-column align-items-center py-5">
-                    <h1 class="text-dark mb-4 fw-bold fs-30">How It Works</h1>
-                    <img src="image/world with lines.png" class="world-lines" />
+                    <h1 class="text-dark mb-4 fw-bold fs-30 section-title">How It Works</h1>
+                    <img src="image/world with lines.png" class="world-lines animate-on-scroll" />
                     <div class="row text-center mt-3">
                         <div class="col-lg-4 mt-4">
-                            <div class="px-4 py-3">
+                            <div class="px-4 py-3 service-card">
                                 <img src="image/explore.png" class="img-work-div" />
                                 <h3 class="mt-4 headline3">Explore</h3>
                                 <p class="text-dark ">Explore our wide range of services and consult with top engineers
@@ -238,19 +249,19 @@
                             </div>
                         </div>
                         <div class="col-lg-4 mt-4">
-                            <div class="px-4 py-3">
+                            <div class="px-4 py-3 service-card">
                                 <img src="image/call.png" class="img-work-div" />
                                 <h3 class="mt-4 headline3">Contact</h3>
                                 <p class="text-dark ">Ask us what's on your mind and discuss your inquiries to reach an
-                                    agreement that satisfies everyone.</p>
+                                    agreement that satisfies everyone. Our team is ready to provide detailed information about our services and solutions.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 mt-4">
-                            <div class="px-4 py-3">
+                            <div class="px-4 py-3 service-card">
                                 <img src="image/smile.png" class="img-work-div" />
                                 <h3 class="mt-4 headline3">Own</h3>
                                 <p class="text-dark ">Congratulations! With a few easy steps, you become a member of our
-                                    family, and your project is our responsibility.</p>
+                                    family, and your project is our responsibility. We ensure timely delivery with the highest quality standards.</p>
                             </div>
                         </div>
                     </div>
@@ -259,35 +270,34 @@
             <div class="bg-light-60">
                 <div class=" container-lg pb-5">
                     <div class=" row text-center pt-2">
-                        <h1 class="text-dark py-4 fw-bold fs-30">Why Choose Us</h1>
-                        <p class=" text-dark fw-bold mb-4">Reasons why people love to perfect their dream projets with
-                            us</p>
+                        <h1 class="text-dark py-4 fw-bold fs-30 section-title">Why Choose Us</h1>
+                        <p class=" text-dark fw-bold mb-4">Reasons why people trust SP Engineering Works with their construction chemical needs</p>
                         <div class=" col-lg-4 mt-2">
-                            <div class="m-2 mx-auto bg-white  div-wth-shadow p-4">
+                            <div class="m-2 mx-auto bg-white div-wth-shadow p-4 feature-card">
                                 <img src="image/location.png" class="mt-3 img-work-div">
-                                <p class="mt-3">Presence in strategic locations surrounded by all the important services
+                                <p class="mt-3">PAN India presence with strategic locations surrounded by all the important services
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-4 mt-2">
-                            <div class="m-2 mx-auto bg-white div-wth-shadow p-4">
+                            <div class="m-2 mx-auto bg-white div-wth-shadow p-4 feature-card">
                                 <img src="image/protection.png" class="mt-3 img-work-div">
-                                <p class="mt-3">Provide guarantees up to 10 years on all basics.</p>
+                                <p class="mt-3">Provide guarantees up to 10 years on all our waterproofing and construction chemical applications.</p>
                             </div>
                         </div>
                         <div class="col-lg-4 mt-2">
-                            <div class="m-2 mx-auto bg-white  div-wth-shadow p-4">
+                            <div class="m-2 mx-auto bg-white div-wth-shadow p-4 feature-card">
                                 <img src="image/chat.png" class="mt-3 img-work-div">
-                                <p class="mt-3">Ensuring constant communication between our officials and customers to
-                                    ensure the best possible service.</p>
+                                <p class="mt-3">Ensuring constant communication between our engineers and customers to
+                                    ensure the best possible service and complete transparency.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class=" container-fluid">
                     <div class="text-center">
-                        <h1 class="text-dark py-4 fw-bold fs-30">Our Projects</h1>
-                        <p class=" text-dark fw-bold mb-4">OUR FEATURED EXCLUSIVES</p>
+                        <h1 class="text-dark py-4 fw-bold fs-30 section-title">Our Projects</h1>
+                        <p class=" text-dark fw-bold mb-4">FEATURED PROJECTS & CLIENTS</p>
                     </div>
                     <div class=" container-lg pb-5 justify-content-center bg-light-60 text-center">
                         <ul class="tabs row row-cols-2 row-cols-lg-6 justify-content-center align-items-center">
@@ -313,26 +323,90 @@
         </div>
     </div>
 
-    <div class="pb-5 bg-light-60">
+    <!-- Client Metrics Section -->
+    <div id="metricsSection" class="metrics-section">
+        <div class="container-lg">
+            <h1 class="text-dark mb-4 text-center fw-bold fs-30 section-title">Client Metrics & Analytics</h1>
+            <p class="text-dark fw-bold mb-4 text-center">Business Performance Insights</p>
+            
+            <!-- Key Metrics Cards -->
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fa-solid fa-sack-dollar"></i>
+                        </div>
+                        <div class="metric-value" id="totalBusinessVolume">₹0</div>
+                        <div class="metric-label">Total Business Volume</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="metric-value" id="totalProjects">0</div>
+                        <div class="metric-label">Total Clients</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="metric-value" id="avgProjectValue">₹0</div>
+                        <div class="metric-label">Average Project Value</div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fa-solid fa-check-circle"></i>
+                        </div>
+                        <div class="metric-value" id="completionRate">0%</div>
+                        <div class="metric-label">Project Completion Rate</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Charts Row -->
+            <div class="row">
+                <div class="col-md-12 col-lg-6 mb-4">
+                    <div class="chart-container">
+                        <canvas id="businessVolumeChart"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="chart-container">
+                        <canvas id="projectStatusChart"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="chart-container">
+                        <canvas id="workTypeChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pb-0 bg-light-60">
         <div class=" container-lg pb-5 ">
-            <h1 class="text-dark mb-5 text-center fw-bold fs-30">Testimonial</h1>
+            <h1 class="text-dark mb-5 text-center fw-bold fs-30 section-title">Client Testimonials</h1>
             <div class="pb-5" style="height: 300px;">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="testomial  py-3 px-4">
+                            <div class="testomial py-3 px-4">
                                 <div class="d-flex ">
                                     <div>
                                         <img src="image/person1.png">
                                     </div>
                                     <div class="ms-3 mt-3 text-start">
-                                        <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to </p>
+                                        <p class="testomial-p">SP Engineering Works delivered exceptional waterproofing solutions for our commercial project. Their team's expertise and professionalism ensured the work was completed on time and to the highest standards. We highly recommend their services.</p>
                                         <div class="d-flex flex-row">
-                                            <h6 class="testomial-h6">Jennifer Lopez</h6>
-                                            <span class="testomial-span">(CEO - SAMA).</span>
+                                            <h6 class="testomial-h6">Rajesh Kumar</h6>
+                                            <span class="testomial-span">(Project Manager - Skyline Builders)</span>
                                         </div>
                                     </div>
                                 </div>
@@ -345,13 +419,10 @@
                                         <img src="image/person1.png">
                                     </div>
                                     <div class="ms-3 mt-3 text-start">
-                                        <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to </p>
+                                        <p class="testomial-p">We've been working with SP Engineering Works for over 5 years on various industrial flooring projects. Their attention to detail and quality of work has been consistently excellent. Their epoxy flooring solutions have significantly improved our facility's durability and appearance.</p>
                                         <div class="d-flex flex-row">
-                                            <h6 class="testomial-h6">Jennifer Lopez</h6>
-                                            <span class="testomial-span">(CEO - SAMA).</span>
+                                            <h6 class="testomial-h6">Sunil Mehta</h6>
+                                            <span class="testomial-span">(Facility Manager - Jindal Steel)</span>
                                         </div>
                                     </div>
                                 </div>
@@ -364,13 +435,10 @@
                                         <img src="image/person1.png">
                                     </div>
                                     <div class="ms-3 mt-3 text-start">
-                                        <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to </p>
+                                        <p class="testomial-p">The expansion joint treatment provided by SP Engineering Works for our manufacturing facility was excellent. Their technical knowledge and quality of materials used were impressive. The work was completed ahead of schedule with minimal disruption to our operations.</p>
                                         <div class="d-flex flex-row">
-                                            <h6 class="testomial-h6">Jennifer Lopez</h6>
-                                            <span class="testomial-span">(CEO - SAMA).</span>
+                                            <h6 class="testomial-h6">Priya Sharma</h6>
+                                            <span class="testomial-span">(Director - Phoenix India Ltd)</span>
                                         </div>
                                     </div>
                                 </div>
@@ -383,13 +451,10 @@
                                         <img src="image/person1.png">
                                     </div>
                                     <div class="ms-3 mt-3 text-start">
-                                        <p class="testomial-p">Lorem Ipsum is simply dummy text of the printing and
-                                            typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                            text ever since the 1500s, when an unknown printer took a galley of type and
-                                            scrambled it to </p>
+                                        <p class="testomial-p">SP Engineering Works provided comprehensive waterproofing solutions for our residential project. Their team's expertise in identifying problem areas and implementing effective solutions was remarkable. The 10-year warranty gives us great peace of mind.</p>
                                         <div class="d-flex flex-row">
-                                            <h6 class="testomial-h6">Jennifer Lopez</h6>
-                                            <span class="testomial-span">(CEO - SAMA).</span>
+                                            <h6 class="testomial-h6">Vikram Singh</h6>
+                                            <span class="testomial-span">(Project Director - Eros Lakewood City)</span>
                                         </div>
                                     </div>
                                 </div>
@@ -399,10 +464,10 @@
                 </div>
             </div>
         </div>
-        <div class="container-lg pb-5">
-            <h1 class="text-dark mb-5 text-center fw-bold fs-30">Our Partners</h1>
+        <div class="container-lg pb-4">
+            <h1 class="text-dark mb-2 text-center fw-bold fs-30 section-title">Our Partners</h1>
 
-            <div class="swiper swpartners">
+            <div class="swiper swpartners" style="height: 120px; margin-bottom: 0;">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide swp-slide">
                         <img src="image/partner1.png" class="sw-img" />
@@ -432,7 +497,9 @@
         <div class="container-lg mt-0 mt-lg-0 pt-0 pt-lg-0">
             <div class="row pb-4">
                 <div class="col-lg-4 mt-5">
-                    <a href="index.html"><img src="image/brand.png" class="logo-brand" /></a>
+                    <a href="index.html" class="bg-[#ebe4d7]">
+                        <img src="image/logo.svg" class="logo-brand" />
+                    </a>
                     <div class="mt-3">
                         <p class="footer-company-desc">
                             Established in the year 2000, we, S. P. Engineering Works are one of the leading service
@@ -474,9 +541,7 @@
                                 <li class="nav-item">
                                     <a href="gallery.html" class="nav-link ms-0 mb-1  px-0 link-footer">Gallery</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="news.html" class="nav-link ms-0 mb-1  px-0 link-footer">News</a>
-                                </li>
+                            
                                 <li class="nav-item">
                                     <a href="contact.html" class="nav-link ms-0 mb-1 px-0  link-footer">Contact us</a>
                                 </li>
@@ -484,19 +549,9 @@
                         </div>
                         <div class="col">
                             <ul class="nav flex-column ">
-                                <li class="nav-item">
-                                    <a href="order.html" class="nav-link ms-0  mb-1 px-0 link-footer">Place order</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="career.html" class="nav-link ms-0 mb-1  px-0 link-footer">Career</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="faq.html" class="nav-link ms-0 mb-1  px-0 link-footer">FAQ</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="privacy.html" class="nav-link ms-0 mb-1  px-0 link-footer">Privacy
-                                        Policy</a>
-                                </li>
+    
+                               
+                        
                                 <li class="nav-item">
                                     <a href="terms.html" class="nav-link ms-0 mb-1  px-0 link-footer">Term use</a>
                                 </li>
@@ -507,43 +562,36 @@
                 <div class="col-lg-4 mt-5">
                     <h5 class="link-footer-parent"><span class="">Newsletter Subscribe</span> </h5>
 
-                    <form id="footerform" class="">
-                        <div class="">
-                            <label for="emailtxt" class="form-label"></label>
-                            <input type="text" class="form-control bg-transparent text-white py-2 px-2" id="emailtxt">
-                            <div class="invalid-email"></div>
-                        </div>
-                        <button class="btn w-100 mt-3 btn-yellow text-white" type="submit">Subscription</button>
-                    </form>
+                    
                     <div class="mt-4">
                         <div class="d-inline-block ms-1 me-3">
-                            <a href="http://facebook.com/people/Amaas-Realestate/10007915978616">
+                            <a href="#" aria-label="Facebook">
                                 <i class="fa-brands fa-facebook-f footer-links"></i>
                             </a>
                         </div>
                         <div class="d-inline-block   me-3">
-                            <a href="https://twitter.com/amaasrealestate">
+                            <a href="#" aria-label="Twitter">
                                 <i class="fa-brands fa-twitter footer-links"></i>
                             </a>
                         </div>
                         <div class="d-inline-block  me-3">
-                            <a href="https://api.whatsapp.com/message/UZV7GQTD6S7FA1">
+                            <a href="#" aria-label="WhatsApp">
                                 <i class="fa-brands fa-whatsapp footer-links"></i>
                             </a>
                         </div>
 
                         <div class="d-inline-block  me-3">
-                            <a href="https://www.youtube.com/channel/UCKftYeW9JhMnSlUM8ORun6w">
+                            <a href="#" aria-label="YouTube">
                                 <i class="fa-brands fa-youtube footer-links"></i>
                             </a>
                         </div>
                         <div class="d-inline-block  me-3">
-                            <a href="https://www.instagram.com/amaasrealestate/">
+                            <a href="#" aria-label="Instagram">
                                 <i class="fa-brands fa-instagram footer-links"></i>
                             </a>
                         </div>
                         <div class="d-inline-block  me-3">
-                            <a href="https://www.linkedin.com/company/amaasrealestate/">
+                            <a href="#" aria-label="LinkedIn">
                                 <i class="fa-brands fa-linkedin-in footer-links"></i>
                             </a>
                         </div>
@@ -554,7 +602,7 @@
         </div>
     </div>
     <div class="bg-footer text-center text-white fw-bold fs-12 py-4 footer-border-top">
-        All rights reserved to SP Engineering Works © 2023
+        All rights reserved to SP Engineering Works © 2025
     </div>
 
     <!--Bootstrap JS-->
@@ -563,6 +611,67 @@
     <script src="js/swiper.js"></script>
     <!-- Pages JS Common-->
     <script src="js/common.js"></script>
+    <!-- Metrics JS -->
+    <script src="js/metrics.js"></script>
+
+    <!-- Animation script -->
+    <script>
+        // Initialize animations when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add animation classes to elements
+            const animateElements = document.querySelectorAll('.animate-on-scroll');
+            
+            // Intersection Observer for scroll animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            // Observe all elements with animation classes
+            animateElements.forEach(el => {
+                observer.observe(el);
+            });
+            
+            // Add animation to carousel text
+            const animateText = document.querySelectorAll('.animate-text');
+            animateText.forEach(text => {
+                text.classList.add('fade-in-text');
+            });
+            
+            // Add animation to buttons
+            const animateButtons = document.querySelectorAll('.animate-button');
+            animateButtons.forEach(button => {
+                button.classList.add('pulse-button');
+            });
+            
+            // Add hover effects to service cards
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.classList.add('service-card-hover');
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.classList.remove('service-card-hover');
+                });
+            });
+            
+            // Add hover effects to feature cards
+            const featureCards = document.querySelectorAll('.feature-card');
+            featureCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.classList.add('feature-card-hover');
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.classList.remove('feature-card-hover');
+                });
+            });
+        });
+    </script>
 
     <script>
 
