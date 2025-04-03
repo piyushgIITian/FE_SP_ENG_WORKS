@@ -1,4 +1,4 @@
-﻿﻿<!doctype html>
+﻿﻿﻿﻿<!doctype html>
 <html lang="en">
 
 <head>
@@ -16,7 +16,7 @@
     <!-- Animations CSS -->
     <link href="css/animations.css" rel="stylesheet" />
 
-    <link rel="icon" href="image/sp-icon.png" sizes="32x32">
+    <link rel="icon" href="image/logo.png" sizes="32x32">
 
     <title>Contact SP Engineering Works - Construction Chemicals & Waterproofing Solutions</title>
     <meta name="description"
@@ -224,53 +224,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 mt-5">
-                    <h5 class="link-footer-parent"><span class="">Newsletter Subscribe</span> </h5>
-
-                    <form id="footerform" class="">
-                        <div class="">
-                            <label for="emailtxt" class="form-label"></label>
-                            <input type="text" class="form-control bg-transparent text-white py-2 px-2"
-                                placeholder="Enter Your E-mail" id="emailtxt">
-                            <div class="invalid-email"></div>
-                        </div>
-                        <button class="btn w-100 mt-3 btn-yellow text-white" type="submit">Subscription</button>
-                    </form>
-                    <div class="mt-4">
-                        <div class="d-inline-block ms-1 me-3">
-                            <a href="#" aria-label="Facebook">
-                                <i class="fa-brands fa-facebook-f footer-links"></i>
-                            </a>
-                        </div>
-                        <div class="d-inline-block   me-3">
-                            <a href="#" aria-label="Twitter">
-                                <i class="fa-brands fa-twitter footer-links"></i>
-                            </a>
-                        </div>
-                        <div class="d-inline-block  me-3">
-                            <a href="#" aria-label="WhatsApp">
-                                <i class="fa-brands fa-whatsapp footer-links"></i>
-                            </a>
-                        </div>
-
-                        <div class="d-inline-block  me-3">
-                            <a href="#" aria-label="YouTube">
-                                <i class="fa-brands fa-youtube footer-links"></i>
-                            </a>
-                        </div>
-                        <div class="d-inline-block  me-3">
-                            <a href="#" aria-label="Instagram">
-                                <i class="fa-brands fa-instagram footer-links"></i>
-                            </a>
-                        </div>
-                        <div class="d-inline-block  me-3">
-                            <a href="#" aria-label="LinkedIn">
-                                <i class="fa-brands fa-linkedin-in footer-links"></i>
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
+              
             </div>
         </div>
     </div>
@@ -281,30 +235,11 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Pages JS Common-->
     <script src="js/common.js"></script>
+    <!-- EmailJS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Contact Form JS -->
+    <script src="js/contact.js"></script>
     <script>
-        // Form validation
-        (() => {
-            'use strict'
-            const forms = document.querySelectorAll('.needs-validation')
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    } else {
-                        // If form is valid, show success message
-                        event.preventDefault();
-                        alert('Thank you for your message! Our team will contact you shortly.');
-                        form.reset();
-                        form.classList.remove('was-validated');
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-
         // Animation effects
         document.addEventListener('DOMContentLoaded', function () {
             // Add animation to form elements
