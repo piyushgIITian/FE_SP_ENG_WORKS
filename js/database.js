@@ -314,7 +314,7 @@ var clientale = [
     site: "DMRC, Phase-III",
     type: "clientale",
     work: "D Wall Repairs",
-    business_volume: "1.15 Cr",
+    business_volume: "115 L",
   },
   {
     id: 24,
